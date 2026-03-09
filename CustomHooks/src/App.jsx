@@ -6,26 +6,39 @@ function App() {
   console.log("Val----", value)
   return (
     <>
-    <div> 
-      <button 
-        onClick={toggleValue}>
-        Toggle Heading
-      </button>
+    <div className='main'>
+      <div className='container'> 
+        <div className='cTop'>
+          <button 
+            onClick={toggleValue}
+            className='btn'>
+            Toggle Heading
+          </button>
 
-      <button 
-        onClick={()=> toggleValue(false)}>
-        Hide Heading
-      </button>
+          <button 
+            onClick={()=> toggleValue(false)}
+            className='btn'>
+            Hide Heading
+          </button>
 
-      <button 
-        onClick={()=> toggleValue(true)}>
-        Show Heading
-      </button>
+          <button 
+            onClick={()=> toggleValue(true)}
+            className='btn'>
+            Show Heading
+          </button>
+          </div>    
 
-      {
-        value? <h1>Custom Hooks in React</h1>:null
-      }
-    </div>
+          <div className='cBottom'>
+          {
+            value? <h1>Custom Hooks in React</h1>:null
+          }
+          </div>
+
+          <button className='btnLast'>
+            Click here
+          </button>
+        </div>
+      </div>
     </>
   )
 }
