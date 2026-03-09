@@ -1,5 +1,5 @@
 import './App.css'
-import useToggle from 'C:/React/CustomHooks/CustomHooks/src/UseToggle.jsx'
+import useToggle from './UseToggle.jsx'
 function App() {
 
   const[value, toggleValue] = useToggle(true)
@@ -7,10 +7,20 @@ function App() {
   return (
     <>
     <div> 
-      <button onClick={toggleValue}>Toggle Heading</button>
-      <button onClick={()=> toggleValue(false)}>Hide Heading</button>
-      <button onClick={()=> toggleValue(true)}>Show Heading</button>
-      {/* <h1>This is Costom Hook</h1> */}
+      <button 
+        onClick={toggleValue}>
+        Toggle Heading
+      </button>
+
+      <button 
+        onClick={()=> toggleValue(false)}>
+        Hide Heading
+      </button>
+
+      <button 
+        onClick={()=> toggleValue(true)}>
+        Show Heading
+      </button>
 
       {
         value? <h1>Custom Hooks in React</h1>:null

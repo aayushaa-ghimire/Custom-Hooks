@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-const useToggle = (defaultVal) =>{
-const[value, setValue] = useState(defaultVal);
+const useToggle = (defaultVal) =>{      //First make an arrow function
+const[value, setValue] = useState(defaultVal);      //Then using useState
 function toggleValue(val){
     if(typeof val!='boolean'){
         setValue(!value)
