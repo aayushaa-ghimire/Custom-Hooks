@@ -6,7 +6,6 @@ function App() {
   console.log("Val----", value)
   return (
     <>
-    <div className='main'>
       <div className='container'> 
         <div className='cTop'>
           <button 
@@ -38,7 +37,6 @@ function App() {
             Click here
           </button>
         </div>
-      </div>
     </>
   )
 }
